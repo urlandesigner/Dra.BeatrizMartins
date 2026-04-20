@@ -12,13 +12,13 @@ export const CONFIG = {
     anosExperiencia: null, // preencher quando disponível
     pacientesAtendidos: null,
     avaliacao: "4.9",
-    foto: null, // ← Substituir por heroFoto quando a foto estiver disponível
+    foto: "/images/drabeatriz.png",
     fraseHero: "Respirar não precisa ser difícil.",
     subfraseHero: "Pneumologista com abordagem integrativa, individual e humana. Cuido da sua saúde respiratória para que você viva com mais energia e qualidade de vida.",
     sobre: {
       epigrafe: "Minha missão em cada consulta: oferecer uma abordagem integrativa, individual e humana.",
       paragrafos: [
-        "Prazer, meu nome é Beatriz! Sou pneumologista formada e especializada em doenças pulmonares obstrutivas pela Universidade de São Paulo. Capixaba da gema, realizei minha formação como médica pela Universidade Federal do Espírito Santo.",
+        "Prazer, meu nome é Beatriz! Sou pneumologista formada e especializada em doenças pulmonares obstrutivas pela Universidade de São Paulo (USP). Capixaba da gema, realizei minha formação como médica pela Universidade Federal do Espírito Santo.",
         "Já na faculdade me apaixonei pela pneumologia, pois enxerguei como o cuidado da saúde respiratória consegue proporcionar e devolver coisas muito preciosas — como o prazer de realizar nossas atividades diárias, a energia para fazermos aquilo que gostamos e o fôlego necessário para encararmos os desafios da vida. E, desde então, tornou-se minha missão ajudar as pessoas a respirar melhor.",
         "Fui entendendo que o cuidado com a saúde respiratória vai muito além de exames e medicamentos. Esse cuidado envolve o paciente como um todo, e esse é o meu propósito em cada consulta: oferecer uma abordagem integrativa, individual e humana.",
       ],
@@ -67,12 +67,11 @@ export const CONFIG = {
   autoridade: {
     formacao: [
       "Graduação em Medicina — Universidade Federal do Espírito Santo (UFES) · CRM/ES 16629",
-      "Residência em Clínica Médica — Santa Casa de São Paulo (USP)",
-      "Especialização em Pneumologia — Universidade de São Paulo (USP) · RQE 16151",
+      "Residência em Clínica Médica — Santa Casa de São Paulo",
+      "Residência em Pneumologia — Universidade de São Paulo (USP) · RQE 16151",
       "Complementação Especializada em Doenças Pulmonares Obstrutivas — USP",
     ],
     certificacoes: [
-      "Pneumologista titulada pela Sociedade Brasileira de Pneumologia e Tisiologia (SBPT)",
       "Especialista em Doenças Pulmonares Obstrutivas — USP",
       "Membro da Sociedade Brasileira de Pneumologia e Tisiologia",
     ],
