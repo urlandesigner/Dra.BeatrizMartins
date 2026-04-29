@@ -12,7 +12,7 @@ export const CONFIG = {
     anosExperiencia: null, // preencher quando disponível
     pacientesAtendidos: null,
     avaliacao: "4.9",
-    foto: "/images/drabeatriz.png",
+    foto: "/images/drabeatriz.jpeg",
     fraseHero: "Respirar não precisa ser difícil.",
     subfraseHero: "Pneumologista com abordagem integrativa, individual e humana. Cuido da sua saúde respiratória para que você viva com mais energia e qualidade de vida.",
     sobre: {
