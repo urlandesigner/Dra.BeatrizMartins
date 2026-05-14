@@ -110,9 +110,7 @@ export default function Hero() {
 
       </div>
 
-      {/* ── Indicador de scroll ──────────────────────────────────── */}
       <div className="hero-scroll animate-fade-up delay-600" aria-hidden>
-        <span className="hero-scroll-label">scroll</span>
         <div className="hero-scroll-line" />
       </div>
 
