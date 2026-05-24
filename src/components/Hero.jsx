@@ -32,6 +32,7 @@ export default function Hero() {
 
   return (
     <section
+      id="hero"
       className="relative bg-[var(--color-base)]"
       style={{ paddingTop: "var(--header-h)" }}
       aria-label="Apresentação"
@@ -89,7 +90,14 @@ export default function Hero() {
         {/* ── Coluna direita — Foto ou Placeholder ────────────────── */}
         <div className="hero-photo animate-fade-in delay-200">
           {foto ? (
-            <img src={foto} alt={`Foto de ${nome}`} draggable="false" />
+            <img
+              src={foto}
+              alt={`${nome}, pneumologista em Vitória/ES — consultório Clínica MedSono`}
+              width={800}
+              height={1000}
+              fetchPriority="high"
+              draggable="false"
+            />
           ) : (
             <div className="hero-placeholder" aria-hidden>
               {/* Luzes decorativas que simulam iluminação de estúdio */}

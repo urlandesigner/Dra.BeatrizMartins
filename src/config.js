@@ -5,6 +5,17 @@
 // import heroFoto from './assets/hero.jpg'; // ← Adicione a foto da médica e descomente
 
 export const CONFIG = {
+  seo: {
+    siteUrl: "https://drabeatrizmartins.com.br",
+    title: "Dra. Beatriz Martins | Pneumologista em Vitória/ES",
+    description:
+      "Pneumologista em Vitória/ES. Tratamento de asma, DPOC, apneia do sono e doenças pulmonares obstrutivas. Atendimento humano na Clínica MedSono. Agende sua consulta.",
+    keywords:
+      "pneumologista vitória, pneumologista ES, Dra Beatriz Martins, asma, DPOC, apneia do sono, pneumologia vitória",
+    ogImage: "/images/drabeatriz.jpeg",
+    locale: "pt_BR",
+  },
+
   medico: {
     nome: "Dra. Beatriz Martins",
     especialidade: "Pneumologia",

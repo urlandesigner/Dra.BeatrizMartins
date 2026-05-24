@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { CONFIG } from "./config";
+import SeoHead from "./components/SeoHead";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Sobre from "./components/Sobre";
@@ -30,6 +31,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen">
+      <SeoHead />
       <Header />
 
       <main>

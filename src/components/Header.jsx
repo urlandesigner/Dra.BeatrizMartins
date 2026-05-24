@@ -12,6 +12,7 @@ const NAV_LINKS = [
   { label: "Sobre",          href: "#sobre"          },
   { label: "Especialidades", href: "#especialidades"  },
   { label: "Depoimentos",    href: "#depoimentos"     },
+  { label: "FAQ",            href: "#faq"             },
   { label: "Contato",        href: "#contato"         },
 ];
 
