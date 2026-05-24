@@ -49,10 +49,23 @@ export default function App() {
       {/* Footer minimalista — sob o CTA Final escuro */}
       <footer className="footer-bar" role="contentinfo">
         <div className="footer-inner">
-          <span className="footer-copy">
-            © {new Date().getFullYear()} {CONFIG.medico.nome}. Todos os direitos reservados.
-          </span>
-          <span className="footer-crm">{CONFIG.medico.crm}</span>
+          <div className="footer-left">
+            <span className="footer-copy">
+              © {new Date().getFullYear()} {CONFIG.medico.nome}. Todos os direitos reservados.
+            </span>
+            <span className="footer-crm">{CONFIG.medico.crm}</span>
+          </div>
+          <p className="footer-credits">
+            Desenvolvido por{" "}
+            <a
+              href="https://urlandipre.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Urlan Dipré
+            </a>
+            .
+          </p>
         </div>
       </footer>
     </div>
