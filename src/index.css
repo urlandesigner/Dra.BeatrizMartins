@@ -187,7 +187,7 @@ body {
 
 .hdr-identity-name {
   font-family: var(--font-display);
-  font-size: 19px;           /* ↑ de 17px — mais presença */
+  font-size: 21px;
   font-weight: 400;
   letter-spacing: -0.015em;
   color: var(--color-ink);
@@ -202,7 +202,7 @@ body {
 
 .hdr-identity-sep {
   font-family: var(--font-body);
-  font-size: 11px;
+  font-size: 13px;
   color: var(--color-nude);
   opacity: 0.4;              /* ↓ menos peso que antes */
   line-height: 1;
@@ -211,7 +211,7 @@ body {
 
 .hdr-identity-role {
   font-family: var(--font-body);
-  font-size: 9px;            /* ↓ de 10px — mais caption, menos título */
+  font-size: 11px;
   font-weight: 400;
   letter-spacing: 0.22em;   /* ↑ mais tracking — diferencia do nome */
   text-transform: uppercase;
@@ -246,7 +246,7 @@ body {
 .hdr-nav-link {
   position: relative;
   font-family: var(--font-body);
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 400;
   letter-spacing: 0.05em;
   color: rgba(28, 28, 26, 0.52);
@@ -335,7 +335,7 @@ body {
 .hdr-cta-label {
   position: relative;
   font-family: var(--font-body);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;          /* ↑ de 500 — distingue dos links de nav */
   letter-spacing: 0.13em;
   text-transform: uppercase;
@@ -368,7 +368,7 @@ body {
 }
 
 .hdr-cta-arrow {
-  font-size: 13px;
+  font-size: 15px;
   color: var(--color-nude);
   display: inline-block;
   transition:
@@ -467,7 +467,7 @@ body {
   border: none;
   cursor: pointer;
   font-family: var(--font-body);
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 300;
   color: var(--color-ink-soft);
   line-height: 1;
@@ -489,7 +489,7 @@ body {
 .hdr-drawer-name {
   display: block;
   font-family: var(--font-display);
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 400;
   color: var(--color-ink);
   letter-spacing: -0.01em;
@@ -499,7 +499,7 @@ body {
 .hdr-drawer-role {
   display: block;
   font-family: var(--font-body);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -519,7 +519,7 @@ body {
   align-items: baseline;
   gap: 16px;
   font-family: var(--font-display);
-  font-size: 36px;
+  font-size: 38px;
   font-weight: 400;
   color: var(--color-ink);
   text-decoration: none;
@@ -541,7 +541,7 @@ body {
 
 .hdr-drawer-link-num {
   font-family: var(--font-body);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.1em;
   color: var(--color-nude);
@@ -554,7 +554,7 @@ body {
   display: inline-block;
   margin-top: 36px;
   font-family: var(--font-body);
-  font-size: 12.5px;
+  font-size: 14.5px;
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -1155,7 +1155,7 @@ body {
 
 .espec-num {
   font-family: var(--font-display);
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 400;
   color: var(--color-nude);
   opacity: 0.7;
@@ -1167,7 +1167,7 @@ body {
 
 .espec-item-title {
   font-family: var(--font-display);
-  font-size: clamp(18px, 1.4vw, 22px);
+  font-size: clamp(20px, 1.4vw, 24px);
   font-weight: 500;
   color: var(--color-ink);
   line-height: 1.25;
@@ -1176,7 +1176,7 @@ body {
 
 .espec-item-desc {
   font-family: var(--font-body);
-  font-size: clamp(13px, 0.9vw, 14.5px);
+  font-size: clamp(15px, 0.9vw, 16.5px);
   font-weight: 300;
   line-height: 1.75;
   color: var(--color-ink-soft);
@@ -1240,7 +1240,7 @@ body {
 
 .autor-col-heading {
   font-family: var(--font-body);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -1259,7 +1259,7 @@ body {
 
 .autor-list-item {
   font-family: var(--font-body);
-  font-size: clamp(14px, 1vw, 15.5px);
+  font-size: clamp(16px, 1vw, 17.5px);
   font-weight: 300;
   line-height: 1.58;
   color: var(--color-ink);
@@ -1278,7 +1278,7 @@ body {
   left: 0;
   top: 17px;
   color: var(--color-nude);
-  font-size: 11px;
+  font-size: 13px;
   line-height: 1;
   font-family: var(--font-body);
 }
@@ -1354,7 +1354,7 @@ body {
 
 .depo-quote {
   font-family: var(--font-display);
-  font-size: clamp(15.5px, 1.1vw, 17.5px);
+  font-size: clamp(17.5px, 1.1vw, 19.5px);
   font-weight: 400;
   font-style: italic;
   line-height: 1.72;
@@ -1373,7 +1373,7 @@ body {
 
 .depo-nome {
   font-family: var(--font-body);
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 400;
   letter-spacing: 0.14em;
   text-transform: uppercase;
