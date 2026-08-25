@@ -137,14 +137,16 @@ export const CONFIG = {
     locais: [
       {
         local: "Clínica MedSono",
-        endereco: "R. Prof. Almeida Cousin, 125, sala 1111 — Enseada do Suá, Vitória/ES",
+        endereco: "R. Prof. Almeida Cousin, 125, sala 1111",
+        bairro: "Enseada do Suá, Vitória/ES",
         cep: "29050-565",
         mapaUrl:
           "https://maps.google.com/maps?q=R.+Prof.+Almeida+Cousin,+125,+Enseada+do+Sua,+Vitoria,+ES&output=embed",
       },
       {
         local: "Cenders",
-        endereco: "Rua Coronel Schwab Filho, 190 — Bento Ferreira, Vitória/ES",
+        endereco: "Rua Coronel Schwab Filho, 190",
+        bairro: "Bento Ferreira, Vitória/ES",
         cep: null,
         mapaUrl:
           "https://maps.google.com/maps?q=Rua+Coronel+Schwab+Filho,+190,+Bento+Ferreira,+Vitoria,+ES&output=embed",

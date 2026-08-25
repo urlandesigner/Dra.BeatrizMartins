@@ -42,7 +42,11 @@ export default function Contato() {
 
               <div className="contato-info-group">
                 <span className="contato-label">Endereço</span>
-                <span className="contato-value">{loc.endereco}</span>
+                <span className="contato-value">
+                  {loc.endereco}
+                  <br />
+                  {loc.bairro}
+                </span>
               </div>
 
               <div className="contato-map">
