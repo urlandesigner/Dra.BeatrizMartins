@@ -143,7 +143,7 @@ export const CONFIG = {
           "https://maps.google.com/maps?q=R.+Prof.+Almeida+Cousin,+125,+Enseada+do+Sua,+Vitoria,+ES&output=embed",
       },
       {
-        local: null,
+        local: "Cenders",
         endereco: "Rua Coronel Schwab Filho, 190 — Bento Ferreira, Vitória/ES",
         cep: null,
         mapaUrl:

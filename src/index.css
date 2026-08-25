@@ -1538,6 +1538,18 @@ body {
   .contato-locais {
     grid-template-columns: 1fr 1fr;
     gap: 56px;
+    position: relative;
+  }
+
+  /* Divisor central — não consome largura de nenhuma coluna */
+  .contato-locais::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background: rgba(184, 168, 152, 0.18);
   }
 }
 
@@ -1545,13 +1557,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 24px;
-}
-
-@media (min-width: 768px) {
-  .contato-local:first-child {
-    padding-right: 56px;
-    border-right: 1px solid rgba(184, 168, 152, 0.18);
-  }
 }
 
 /* Ações — WhatsApp, instagram e CTA */
