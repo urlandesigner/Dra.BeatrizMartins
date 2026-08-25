@@ -42,7 +42,7 @@ export const CONFIG = {
   },
 
   whatsapp: {
-    numero: "5527999629365",
+    numero: "5527988801715",
     mensagem: "Olá! Gostaria de agendar uma consulta com a Dra. Beatriz.",
   },
 
@@ -134,13 +134,24 @@ export const CONFIG = {
   ],
 
   contato: {
-    local: "Clínica MedSono",
-    endereco: "R. Prof. Almeida Cousin, 125, sala 1111 — Enseada do Suá, Vitória/ES",
-    cep: "29050-565",
-    telefone: "(27) 99962-9365",
+    locais: [
+      {
+        local: "Clínica MedSono",
+        endereco: "R. Prof. Almeida Cousin, 125, sala 1111 — Enseada do Suá, Vitória/ES",
+        cep: "29050-565",
+        mapaUrl:
+          "https://maps.google.com/maps?q=R.+Prof.+Almeida+Cousin,+125,+Enseada+do+Sua,+Vitoria,+ES&output=embed",
+      },
+      {
+        local: null,
+        endereco: "Rua Coronel Schwab Filho, 190 — Bento Ferreira, Vitória/ES",
+        cep: null,
+        mapaUrl:
+          "https://maps.google.com/maps?q=Rua+Coronel+Schwab+Filho,+190,+Bento+Ferreira,+Vitoria,+ES&output=embed",
+      },
+    ],
+    telefone: "(27) 98880-1715",
     email: null,
     horarios: [],
-    mapaUrl:
-      "https://maps.google.com/maps?q=R.+Prof.+Almeida+Cousin,+125,+Enseada+do+Sua,+Vitoria,+ES&output=embed",
   },
 };

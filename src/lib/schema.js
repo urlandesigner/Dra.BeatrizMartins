@@ -5,6 +5,7 @@ export function buildStructuredData() {
   const { seo, medico, contato, whatsapp, instagram, faq } = CONFIG;
   const siteUrl = seo.siteUrl.replace(/\/$/, "");
   const imageUrl = `${siteUrl}${seo.ogImage}`;
+  const [localPrincipal, ...outrosLocais] = contato.locais;
 
   const physician = {
     "@context": "https://schema.org",
@@ -21,7 +22,7 @@ export function buildStructuredData() {
       streetAddress: "R. Prof. Almeida Cousin, 125, sala 1111",
       addressLocality: "Vitória",
       addressRegion: "ES",
-      postalCode: contato.cep,
+      postalCode: localPrincipal.cep,
       addressCountry: "BR",
     },
     sameAs: [instagram],
@@ -31,7 +32,7 @@ export function buildStructuredData() {
     "@context": "https://schema.org",
     "@type": "MedicalBusiness",
     "@id": `${siteUrl}/#clinic`,
-    name: contato.local,
+    name: localPrincipal.local,
     url: siteUrl,
     telephone: `+${whatsapp.numero}`,
     address: physician.address,
@@ -42,6 +43,23 @@ export function buildStructuredData() {
     },
     openingHoursSpecification: [],
   };
+
+  const outrasUnidades = outrosLocais.map((loc, i) => ({
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "@id": `${siteUrl}/#clinic-${i + 2}`,
+    name: loc.local || medico.nome,
+    url: siteUrl,
+    telephone: `+${whatsapp.numero}`,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: loc.endereco,
+      addressLocality: "Vitória",
+      addressRegion: "ES",
+      addressCountry: "BR",
+    },
+    openingHoursSpecification: [],
+  }));
 
   const faqPage = {
     "@context": "https://schema.org",
@@ -67,5 +85,5 @@ export function buildStructuredData() {
     publisher: { "@id": `${siteUrl}/#physician` },
   };
 
-  return [physician, localBusiness, faqPage, website];
+  return [physician, localBusiness, ...outrasUnidades, faqPage, website];
 }

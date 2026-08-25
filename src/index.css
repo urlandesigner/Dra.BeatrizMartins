@@ -1526,31 +1526,57 @@ body {
   line-height: 1.1;
 }
 
-.contato-body {
+/* Endereços — uma coluna por local */
+.contato-locais {
   display: grid;
   grid-template-columns: 1fr;
-  gap: clamp(48px, 6vh, 72px);
+  gap: clamp(48px, 6vh, 64px);
+  margin-bottom: clamp(56px, 7vh, 80px);
 }
 
 @media (min-width: 768px) {
-  .contato-body {
+  .contato-locais {
     grid-template-columns: 1fr 1fr;
-    gap: 0;
+    gap: 56px;
   }
 }
 
-/* Coluna esquerda — info */
-.contato-info {
+.contato-local {
   display: flex;
   flex-direction: column;
-  gap: 36px;
+  gap: 24px;
 }
 
 @media (min-width: 768px) {
-  .contato-info {
-    padding-right: 72px;
+  .contato-local:first-child {
+    padding-right: 56px;
     border-right: 1px solid rgba(184, 168, 152, 0.18);
   }
+}
+
+/* Ações — WhatsApp, instagram e CTA */
+.contato-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  padding-top: clamp(40px, 6vh, 56px);
+  border-top: 1px solid rgba(184, 168, 152, 0.18);
+}
+
+@media (min-width: 640px) {
+  .contato-actions {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 40px;
+  }
+}
+
+.contato-actions-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px;
 }
 
 .contato-info-group {
@@ -1587,19 +1613,6 @@ a.contato-value:hover {
   color: var(--color-nude-dark);
 }
 
-/* Coluna direita — CTA + mapa */
-.contato-cta-col {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-@media (min-width: 768px) {
-  .contato-cta-col {
-    padding-left: 72px;
-  }
-}
-
 /* Botão WhatsApp — estilo minimalista, não verde */
 .contato-wa-btn {
   display: inline-flex;
@@ -1613,7 +1626,7 @@ a.contato-value:hover {
   letter-spacing: 0.08em;
   padding: 18px 28px;
   text-decoration: none;
-  align-self: flex-start;
+  flex-shrink: 0;
   transition: background 200ms var(--ease-out-strong), transform 160ms;
 }
 
